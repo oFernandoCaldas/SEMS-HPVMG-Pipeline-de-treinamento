@@ -1,0 +1,119 @@
+{
+  "KRR": {
+    "modelo": "resultados/robusto_v2/FINAL/KRR/modelo.joblib",
+    "sha256": "5047092996aacb7f60af2041b28b3c2947e709387a68d663facf7f2fa7c8393c",
+    "parametros": {
+      "alpha": 2.568386730418734,
+      "coef0": 1.0,
+      "degree": 3,
+      "gamma": 0.05718030235668149,
+      "kernel": "polynomial"
+    },
+    "features": [
+      "GHI",
+      "AirTemperature",
+      "WindSpeed"
+    ],
+    "unidades": [
+      "W/m²",
+      "°C",
+      "m/s"
+    ],
+    "alvo": "SystemProduction",
+    "unidade_alvo": "kWh conforme pacote de origem",
+    "inicio": "2024-08-01 00:00",
+    "fim_exclusivo": "2025-04-01 00:00",
+    "emissao_hora_local": 21,
+    "semente": 42,
+    "dominio_avaliado": "geracao_positiva_zenite_meio_intervalo_le90_persistencia_positiva_disponivel"
+  },
+  "MLP": {
+    "modelo": "resultados/robusto_v2/FINAL/MLP/modelo.joblib",
+    "sha256": "06c7f07b481dbe6d5252355de5f1585470ac5e49e4304a0ebd30de8f1523c8ee",
+    "parametros": {
+      "hidden_layer_sizes": [
+        5,
+        5
+      ],
+      "alpha": 0.1,
+      "learning_rate_init": 0.001,
+      "batch_size": "auto",
+      "activation": "relu"
+    },
+    "features": [
+      "GHI",
+      "AirTemperature",
+      "WindSpeed"
+    ],
+    "unidades": [
+      "W/m²",
+      "°C",
+      "m/s"
+    ],
+    "alvo": "SystemProduction",
+    "unidade_alvo": "kWh conforme pacote de origem",
+    "inicio": "2024-08-01 00:00",
+    "fim_exclusivo": "2025-04-01 00:00",
+    "emissao_hora_local": 21,
+    "semente": 42,
+    "dominio_avaliado": "geracao_positiva_zenite_meio_intervalo_le90_persistencia_positiva_disponivel"
+  },
+  "SVR": {
+    "modelo": "resultados/robusto_v2/FINAL/SVR/modelo.joblib",
+    "sha256": "85b3875abe6d82442f1f07256bdef059acfeb248f642396d434c2999363bd695",
+    "parametros": {
+      "C": 34.82675727581821,
+      "epsilon": 0.6973941757037488,
+      "gamma": 0.015062483652633225,
+      "kernel": "rbf"
+    },
+    "features": [
+      "GHI",
+      "AirTemperature",
+      "WindSpeed"
+    ],
+    "unidades": [
+      "W/m²",
+      "°C",
+      "m/s"
+    ],
+    "alvo": "SystemProduction",
+    "unidade_alvo": "kWh conforme pacote de origem",
+    "inicio": "2024-08-01 00:00",
+    "fim_exclusivo": "2025-04-01 00:00",
+    "emissao_hora_local": 21,
+    "semente": 42,
+    "dominio_avaliado": "geracao_positiva_zenite_meio_intervalo_le90_persistencia_positiva_disponivel"
+  },
+  "XGBoost": {
+    "modelo": "resultados/robusto_v2/FINAL/XGBoost/modelo.joblib",
+    "sha256": "6009e2e84a75ceaab54655d26bda267d71aab3f4168cd61733cbf41402f0f108",
+    "parametros": {
+      "colsample_bytree": 0.85,
+      "learning_rate": 0.031950211734973935,
+      "max_depth": 3,
+      "min_child_weight": 16,
+      "n_estimators": 200,
+      "reg_alpha": 1.0,
+      "reg_lambda": 0.849051908330512,
+      "subsample": 0.7
+    },
+    "features": [
+      "GHI",
+      "AirTemperature",
+      "WindSpeed"
+    ],
+    "unidades": [
+      "W/m²",
+      "°C",
+      "m/s"
+    ],
+    "alvo": "SystemProduction",
+    "unidade_alvo": "kWh conforme pacote de origem",
+    "inicio": "2024-08-01 00:00",
+    "fim_exclusivo": "2025-04-01 00:00",
+    "emissao_hora_local": 21,
+    "semente": 42,
+    "dominio_avaliado": "geracao_positiva_zenite_meio_intervalo_le90_persistencia_positiva_disponivel"
+  }
+}
